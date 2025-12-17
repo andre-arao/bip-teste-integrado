@@ -1,0 +1,50 @@
+<div style="max-width: 900px; margin: auto; font-family: Arial, sans-serif">
+
+  <h1>Benefícios</h1>
+
+  <!-- LISTA -->
+  <table border="1" width="100%" cellpadding="8" cellspacing="0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Saldo</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let b of beneficios">
+        <td>{{ b.id }}</td>
+        <td>
+          <input [(ngModel)]="b.nome" />
+        </td>
+        <td>
+          <input type="number" [(ngModel)]="b.saldo" />
+        </td>
+        <td>
+          <button (click)="atualizar(b)">Salvar</button>
+          <button (click)="excluir(b.id)">Excluir</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr />
+
+  <!-- CRIAR -->
+  <h2>Novo Benefício</h2>
+  <input placeholder="Nome" [(ngModel)]="novoBeneficio.nome" />
+  <input type="number" placeholder="Saldo" [(ngModel)]="novoBeneficio.saldo" />
+  <button (click)="criar()">Criar</button>
+
+  <hr />
+
+  <!-- TRANSFERÊNCIA -->
+  <h2>Transferência</h2>
+  <input type="number" placeholder="From ID" [(ngModel)]="transferencia.fromId" />
+  <input type="number" placeholder="To ID" [(ngModel)]="transferencia.toId" />
+  <input type="number" placeholder="Valor" [(ngModel)]="transferencia.amount" />
+  <button (click)="transferir()">Transferir</button>
+
+</div>
