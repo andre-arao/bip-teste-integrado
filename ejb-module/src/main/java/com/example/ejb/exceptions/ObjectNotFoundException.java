@@ -1,0 +1,10 @@
+package com.example.ejb.exceptions;
+
+public class ObjectNotFoundException extends RuntimeException{
+
+    public ObjectNotFoundException(String message) {
+
+        super(message);
+    }
+
+}

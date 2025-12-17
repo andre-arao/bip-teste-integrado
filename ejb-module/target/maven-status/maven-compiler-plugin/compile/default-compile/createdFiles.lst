@@ -1,0 +1,7 @@
+com/example/ejb/service/BeneficioEjbService.class
+com/example/ejb/repositories/BeneficioRepository.class
+com/example/ejb/entity/Beneficio.class
+com/example/ejb/entity/dto/TransferenciaDto.class
+com/example/ejb/exceptions/DataIntegratyViolationException.class
+com/example/ejb/entity/dto/BeneficioDto.class
+com/example/ejb/exceptions/ObjectNotFoundException.class
