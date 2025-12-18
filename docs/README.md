@@ -34,9 +34,9 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
     
     java -jar backend-module/target/backend-module-0.0.1.jar
 
-5.Build e rodar a aplicação Frontend, executar:
+5.Build e run da aplicação Frontend, executar:
     
-    npm install && ng serve --port 4200
+    cd frontend/beneficios-frontend && npm install && ng serve --port 4200 && cd -
 
 6. Testar Backend via Swagger ou Postman.
 - http://localhost:8080/api/v1/beneficios/swagger-ui.html
