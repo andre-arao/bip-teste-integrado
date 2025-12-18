@@ -46,5 +46,12 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 - http://localhost:4200
 
 ## 🧾 Evidências dos testes
--  ![Interface Web](./images/web.png)
+- Teste Frontend via web:
+  ![Interface Web](./images/web.png)
+
+- Teste Backend via Swagger:
+    ![Swagger](./images/swagger.png)
+
+- Teste Backend via Postman:
+    ![Postman](./images/postman.png)
 
