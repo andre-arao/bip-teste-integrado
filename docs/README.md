@@ -39,7 +39,7 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
     cd frontend && npm install && ng serve --port 4200 && cd -
 
 6. Testar Backend via Swagger ou Postman.
-- http://localhost:8080/api/v1/beneficios/swagger-ui.html
+- http://localhost:8080/swagger-ui/index.html
 - [Collection Postman](./BIP-teste-integrado.postman_collection.json)
 
 6. Testar Frontend via web.
