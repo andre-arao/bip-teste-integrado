@@ -1,6 +1,0 @@
-com/example/backend/config/OpenApiConfig.class
-com/example/backend/controller/BeneficioController.class
-com/example/backend/controller/exceptions/StandardError.class
-com/example/backend/BackendApplication.class
-com/example/backend/config/ModelMapperConfig.class
-com/example/backend/controller/exceptions/ResourceEcxeptionHandler.class

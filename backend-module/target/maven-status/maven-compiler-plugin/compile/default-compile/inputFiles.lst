@@ -1,6 +1,0 @@
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/BackendApplication.java
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/controller/exceptions/ResourceEcxeptionHandler.java
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/controller/BeneficioController.java
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/controller/exceptions/StandardError.java
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/config/ModelMapperConfig.java
-/home/andre-arao/sicoobTeste/bip-teste-integrado/backend-module/src/main/java/com/example/backend/config/OpenApiConfig.java
