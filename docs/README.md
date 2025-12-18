@@ -41,7 +41,7 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 
 6. Testar Backend via Swagger ou Postman.
 - http://localhost:8080/api/v1/beneficios/swagger-ui.html
-- [Collection Postman](./docs/BIP-teste-integrado.postman_collection.json)
+- [Collection Postman](./BIP-teste-integrado.postman_collection.json)
 
 6. Testar Frontend via web.
 - http://localhost:4200
