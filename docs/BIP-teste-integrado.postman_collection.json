@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "06d1e19d-aaa5-48dc-865c-495a19133e13",
+		"name": "BIP-teste-integrado",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29438402",
+		"_collection_link": "https://bold-station-863483.postman.co/workspace/arao~25b01aea-b4f0-4541-91c5-e1a33667a580/collection/29438402-06d1e19d-aaa5-48dc-865c-495a19133e13?action=share&source=collection_link&creator=29438402"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Terceiro\",\n  \"descricao\": \"Ferias remunerada\",\n  \"valor\": 1000.50,\n  \"ativo\": \"true\",\n  \"version\": \"0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/beneficios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"beneficios"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/beneficios"
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"OK\",\n  \"descricao\": \"Ferias remunerada\",\n  \"valor\": 0,\n  \"ativo\": \"true\",\n  \"version\": \"0\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/beneficios/7"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/beneficios/6"
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"fromId\": 10,\n  \"toId\": 12,\n  \"amount\": 100.50\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/beneficios/transfer"
+			},
+			"response": []
+		}
+	]
+}

@@ -1,7 +1,14 @@
-# 🏗️ Desafio Fullstack Integrado
+# 🏗️ BIP Teste Integrado
 
 ## 🎯 Objetivo
 Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug em EJB e entregando aplicação funcional.
+
+## 🧰 Ferramentas
+- Java 17
+- Maven 
+- PostgreSQL
+- npm
+- ng
 
 ## 📦 Estrutura
 - db/: scripts schema e seed
@@ -11,24 +18,28 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 - docs/: instruções e critérios
 - .github/workflows/: CI
 
-## ✅ Tarefas do candidato
-1. Executar db/schema.sql e db/seed.sql
-2. Corrigir bug no BeneficioEjbService
-3. Implementar backend CRUD + integração com EJB
-4. Desenvolver frontend Angular consumindo backend
-5. Implementar testes
-6. Documentar (Swagger, README)
-7. Submeter via fork + PR
+## 🧱 AsBuilt
+1. No Postgres executar:
+    psql -h localhost -U <seu_usuario> -d postgres -f db/schema.sql
+    psql -h localhost -U <seu_usuario> -d postgres -f db/seed.sql
 
-## 🐞 Bug no EJB
-- Transferência não verifica saldo, não usa locking, pode gerar inconsistência
-- Espera-se correção com validações, rollback, locking/optimistic locking
+2. Build da aplicação Backend. Na pasta raiz do projeto, executar:
+    mvn clean install -U
+    
+3. Rodar a aplicação Backend. Na pasta raiz do projeto, executar:
+    java -jar backend-module/target/backend-module-0.0.1.jar
 
-## 📊 Critérios de avaliação
-- Arquitetura em camadas (20%)
-- Correção EJB (20%)
-- CRUD + Transferência (15%)
-- Qualidade de código (10%)
-- Testes (15%)
-- Documentação (10%)
-- Frontend (10%)
+4. Build e rodar a aplicação Frontend, executar:
+    npm install
+    ng serve --port 4200
+
+5. Testar Backend via Swagger ou Postman.
+- http://localhost:8080/api/v1/beneficios/swagger-ui.html
+- [Collection Postman](./docs/BIP-teste-integrado.postman_collection.json)
+
+6. Testar Frontend via web.
+- http://localhost:4200
+
+## 🧾 Evidências dos testes
+- 
+
