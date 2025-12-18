@@ -46,5 +46,5 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 - http://localhost:4200
 
 ## 🧾 Evidências dos testes
--  (./docs/images/web.png)
+-  ![Interface Web](./images/web.png)
 
