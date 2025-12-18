@@ -19,21 +19,27 @@ Criar solução completa em camadas (DB, EJB, Backend, Frontend), corrigindo bug
 - .github/workflows/: CI
 
 ## 🧱 AsBuilt
-1. No Postgres executar:
-    psql -h localhost -U <seu_usuario> -d postgres -f db/schema.sql
-    psql -h localhost -U <seu_usuario> -d postgres -f db/seed.sql
 
-2. Build da aplicação Backend. Na pasta raiz do projeto, executar:
+1.No Postgres executar:
+
+      psql -h localhost -U <seu_usuario> -d postgres -f db/schema.sql
+      psql -h localhost -U <seu_usuario> -d postgres -f db/seed.sql
+
+
+3.Build da aplicação Backend. Na pasta raiz do projeto, executar:
+    
     mvn clean install -U
     
-3. Rodar a aplicação Backend. Na pasta raiz do projeto, executar:
+4.Rodar a aplicação Backend. Na pasta raiz do projeto, executar:
+    
     java -jar backend-module/target/backend-module-0.0.1.jar
 
-4. Build e rodar a aplicação Frontend, executar:
+5.Build e rodar a aplicação Frontend, executar:
+    
     npm install
     ng serve --port 4200
 
-5. Testar Backend via Swagger ou Postman.
+6. Testar Backend via Swagger ou Postman.
 - http://localhost:8080/api/v1/beneficios/swagger-ui.html
 - [Collection Postman](./docs/BIP-teste-integrado.postman_collection.json)
 
