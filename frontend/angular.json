@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "beneficios-frontend": {
+    "projeto-angular-beneficios": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -57,10 +57,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "beneficios-frontend:build:production"
+              "buildTarget": "projeto-angular-beneficios:build:production"
             },
             "development": {
-              "buildTarget": "beneficios-frontend:build:development"
+              "buildTarget": "projeto-angular-beneficios:build:development"
             }
           },
           "defaultConfiguration": "development"
